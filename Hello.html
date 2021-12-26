@@ -1,0 +1,29 @@
+<html>
+    <meta>
+
+    <title>
+        Tell me why?
+        </title>
+        
+        <style>
+.text-block {
+    background-color: aquamarine;
+    width: 100px;
+}
+        </style><meta>
+
+    <body>
+        <div class="text-block">hello world
+            this is a test. 
+        </div>
+        <div class="counter">0</div>
+        <script>
+            setInterval(function () {
+                let currentCount = parseInt(document.querySelector(".counter").textContent);
+                let nextCount = currentCount+1;
+                document.querySelector(".counter").textContent = nextCount
+            },1000)
+        </script>
+        
+    </body>
+</html>
